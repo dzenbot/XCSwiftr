@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F54006BC1CB1B50000D00EBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54006BB1CB1B50000D00EBB /* AppDelegate.swift */; };
+		F54006BE1CB1B50000D00EBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F54006BD1CB1B50000D00EBB /* Assets.xcassets */; };
+		F54006E01CB1B90900D00EBB /* XCSConverterWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54006DC1CB1B90900D00EBB /* XCSConverterWindowController.swift */; };
+		F54006E11CB1B90900D00EBB /* XCSConverterWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54006DC1CB1B90900D00EBB /* XCSConverterWindowController.swift */; };
+		F54006E51CB1B94A00D00EBB /* XCSCommandController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54006E41CB1B94A00D00EBB /* XCSCommandController.swift */; };
+		F54006E61CB1B94A00D00EBB /* XCSCommandController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54006E41CB1B94A00D00EBB /* XCSCommandController.swift */; };
+		F54006EF1CB2054800D00EBB /* XCSConverterWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F54006EE1CB2054800D00EBB /* XCSConverterWindowController.xib */; };
+		F54006F01CB2054800D00EBB /* XCSConverterWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F54006EE1CB2054800D00EBB /* XCSConverterWindowController.xib */; };
+		F54006F31CB2062500D00EBB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F54006F11CB2062500D00EBB /* MainMenu.xib */; };
+		F54006F81CB20B3100D00EBB /* objc2swift-1.0.jar in Resources */ = {isa = PBXBuildFile; fileRef = F54006F51CB20AE800D00EBB /* objc2swift-1.0.jar */; };
+		F54006FA1CB2674800D00EBB /* XCSSnippetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54006F91CB2674800D00EBB /* XCSSnippetManager.swift */; };
+		F54006FB1CB2674800D00EBB /* XCSSnippetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54006F91CB2674800D00EBB /* XCSSnippetManager.swift */; };
+		F5572C001CB3A00C003C5ACF /* objc2swift-1.0.jar in Resources */ = {isa = PBXBuildFile; fileRef = F54006F51CB20AE800D00EBB /* objc2swift-1.0.jar */; };
+		F5680FD61CB39E2B00369349 /* XcodeHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A2A241CB38A610078BF29 /* XcodeHelpers.m */; };
+		F5860F851CB398F900643FA9 /* XCSwiftrPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = F5860F831CB398F900643FA9 /* XCSwiftrPlugin.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F54006B91CB1B50000D00EBB /* XCSwiftr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCSwiftr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F54006BB1CB1B50000D00EBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F54006BD1CB1B50000D00EBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F54006C21CB1B50000D00EBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F54006DC1CB1B90900D00EBB /* XCSConverterWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCSConverterWindowController.swift; sourceTree = "<group>"; };
+		F54006E41CB1B94A00D00EBB /* XCSCommandController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCSCommandController.swift; sourceTree = "<group>"; };
+		F54006EE1CB2054800D00EBB /* XCSConverterWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCSConverterWindowController.xib; sourceTree = "<group>"; };
+		F54006F21CB2062500D00EBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F54006F51CB20AE800D00EBB /* objc2swift-1.0.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = "objc2swift-1.0.jar"; sourceTree = "<group>"; };
+		F54006F91CB2674800D00EBB /* XCSSnippetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCSSnippetManager.swift; sourceTree = "<group>"; };
+		F5860F5F1CB3982300643FA9 /* XCSwiftr-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XCSwiftr-Bridging-Header.h"; sourceTree = "<group>"; };
+		F5860F821CB398F900643FA9 /* XCSwiftrPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCSwiftrPlugin.h; sourceTree = "<group>"; };
+		F5860F831CB398F900643FA9 /* XCSwiftrPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCSwiftrPlugin.m; sourceTree = "<group>"; };
+		F59A2A221CB38A610078BF29 /* XcodeHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcodeHeaders.h; sourceTree = "<group>"; };
+		F59A2A231CB38A610078BF29 /* XcodeHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcodeHelpers.h; sourceTree = "<group>"; };
+		F59A2A241CB38A610078BF29 /* XcodeHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XcodeHelpers.m; sourceTree = "<group>"; };
+		F5BAF8331CB1B04F00FA49E2 /* XCSwiftr.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCSwiftr.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5BAF8461CB1B0E000FA49E2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F54006B61CB1B50000D00EBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F54006BA1CB1B50000D00EBB /* XCSwiftrApp */ = {
+			isa = PBXGroup;
+			children = (
+				F54006BB1CB1B50000D00EBB /* AppDelegate.swift */,
+				F54006F11CB2062500D00EBB /* MainMenu.xib */,
+				F54006BD1CB1B50000D00EBB /* Assets.xcassets */,
+				F54006C21CB1B50000D00EBB /* Info.plist */,
+			);
+			path = XCSwiftrApp;
+			sourceTree = "<group>";
+		};
+		F54006C61CB1B57500D00EBB /* XCSwiftr */ = {
+			isa = PBXGroup;
+			children = (
+				F54006E71CB204A100D00EBB /* Vendor */,
+				F54006D91CB1B90900D00EBB /* Classes */,
+				F54006DE1CB1B90900D00EBB /* Resources */,
+			);
+			path = XCSwiftr;
+			sourceTree = "<group>";
+		};
+		F54006D91CB1B90900D00EBB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F54006DA1CB1B90900D00EBB /* DataControllers */,
+				F54006DB1CB1B90900D00EBB /* ViewControllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F54006DA1CB1B90900D00EBB /* DataControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F54006E41CB1B94A00D00EBB /* XCSCommandController.swift */,
+				F54006F91CB2674800D00EBB /* XCSSnippetManager.swift */,
+			);
+			path = DataControllers;
+			sourceTree = "<group>";
+		};
+		F54006DB1CB1B90900D00EBB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F54006DC1CB1B90900D00EBB /* XCSConverterWindowController.swift */,
+				F54006EE1CB2054800D00EBB /* XCSConverterWindowController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F54006DE1CB1B90900D00EBB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F54006E71CB204A100D00EBB /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				F59A2A211CB38A610078BF29 /* XcodeHelpers */,
+				F54006F41CB20AE800D00EBB /* objc2swift */,
+				F5860F5F1CB3982300643FA9 /* XCSwiftr-Bridging-Header.h */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		F54006F41CB20AE800D00EBB /* objc2swift */ = {
+			isa = PBXGroup;
+			children = (
+				F54006F51CB20AE800D00EBB /* objc2swift-1.0.jar */,
+			);
+			path = objc2swift;
+			sourceTree = "<group>";
+		};
+		F59A2A211CB38A610078BF29 /* XcodeHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				F59A2A221CB38A610078BF29 /* XcodeHeaders.h */,
+				F59A2A231CB38A610078BF29 /* XcodeHelpers.h */,
+				F59A2A241CB38A610078BF29 /* XcodeHelpers.m */,
+			);
+			name = XcodeHelpers;
+			path = DTXcodeUtils;
+			sourceTree = "<group>";
+		};
+		F5BAF82B1CB1B04F00FA49E2 = {
+			isa = PBXGroup;
+			children = (
+				F5BAF8451CB1B0E000FA49E2 /* XCSwiftrPlugin */,
+				F54006BA1CB1B50000D00EBB /* XCSwiftrApp */,
+				F54006C61CB1B57500D00EBB /* XCSwiftr */,
+				F5BAF8341CB1B04F00FA49E2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5BAF8341CB1B04F00FA49E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5BAF8331CB1B04F00FA49E2 /* XCSwiftr.xcplugin */,
+				F54006B91CB1B50000D00EBB /* XCSwiftr.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5BAF8451CB1B0E000FA49E2 /* XCSwiftrPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				F5860F821CB398F900643FA9 /* XCSwiftrPlugin.h */,
+				F5860F831CB398F900643FA9 /* XCSwiftrPlugin.m */,
+				F5BAF8461CB1B0E000FA49E2 /* Info.plist */,
+			);
+			path = XCSwiftrPlugin;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F54006B81CB1B50000D00EBB /* XCSwiftrApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F54006C31CB1B50000D00EBB /* Build configuration list for PBXNativeTarget "XCSwiftrApp" */;
+			buildPhases = (
+				F54006B51CB1B50000D00EBB /* Sources */,
+				F54006B61CB1B50000D00EBB /* Frameworks */,
+				F54006B71CB1B50000D00EBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XCSwiftrApp;
+			productName = XCSwiftrApp;
+			productReference = F54006B91CB1B50000D00EBB /* XCSwiftr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5BAF8321CB1B04F00FA49E2 /* XCSwiftrPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5BAF8401CB1B04F00FA49E2 /* Build configuration list for PBXNativeTarget "XCSwiftrPlugin" */;
+			buildPhases = (
+				F5BAF8301CB1B04F00FA49E2 /* Sources */,
+				F5BAF8311CB1B04F00FA49E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XCSwiftrPlugin;
+			productName = XCSwiftr;
+			productReference = F5BAF8331CB1B04F00FA49E2 /* XCSwiftr.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5BAF82C1CB1B04F00FA49E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "DZN Labs";
+				TargetAttributes = {
+					F54006B81CB1B50000D00EBB = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					F5BAF8321CB1B04F00FA49E2 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = F5BAF82F1CB1B04F00FA49E2 /* Build configuration list for PBXProject "XCSwiftr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5BAF82B1CB1B04F00FA49E2;
+			productRefGroup = F5BAF8341CB1B04F00FA49E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5BAF8321CB1B04F00FA49E2 /* XCSwiftrPlugin */,
+				F54006B81CB1B50000D00EBB /* XCSwiftrApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F54006B71CB1B50000D00EBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F54006F81CB20B3100D00EBB /* objc2swift-1.0.jar in Resources */,
+				F54006BE1CB1B50000D00EBB /* Assets.xcassets in Resources */,
+				F54006F01CB2054800D00EBB /* XCSConverterWindowController.xib in Resources */,
+				F54006F31CB2062500D00EBB /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5BAF8311CB1B04F00FA49E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5572C001CB3A00C003C5ACF /* objc2swift-1.0.jar in Resources */,
+				F54006EF1CB2054800D00EBB /* XCSConverterWindowController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F54006B51CB1B50000D00EBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F54006BC1CB1B50000D00EBB /* AppDelegate.swift in Sources */,
+				F54006E61CB1B94A00D00EBB /* XCSCommandController.swift in Sources */,
+				F54006FB1CB2674800D00EBB /* XCSSnippetManager.swift in Sources */,
+				F54006E11CB1B90900D00EBB /* XCSConverterWindowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5BAF8301CB1B04F00FA49E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F54006E01CB1B90900D00EBB /* XCSConverterWindowController.swift in Sources */,
+				F54006E51CB1B94A00D00EBB /* XCSCommandController.swift in Sources */,
+				F5680FD61CB39E2B00369349 /* XcodeHelpers.m in Sources */,
+				F54006FA1CB2674800D00EBB /* XCSSnippetManager.swift in Sources */,
+				F5860F851CB398F900643FA9 /* XCSwiftrPlugin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F54006F11CB2062500D00EBB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F54006F21CB2062500D00EBB /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F54006C41CB1B50000D00EBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				INFOPLIST_FILE = XCSwiftrApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dzn.XCSwiftrApp;
+				PRODUCT_NAME = XCSwiftr;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F54006C51CB1B50000D00EBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				INFOPLIST_FILE = XCSwiftrApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dzn.XCSwiftrApp;
+				PRODUCT_NAME = XCSwiftr;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+			};
+			name = Release;
+		};
+		F5BAF83E1CB1B04F00FA49E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		F5BAF83F1CB1B04F00FA49E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		F5BAF8411CB1B04F00FA49E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"PLUGIN=1",
+					"DEBUG=1",
+				);
+				INFOPLIST_FILE = XCSwiftrPlugin/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				LD_RUNPATH_SEARCH_PATHS = "$(DT_TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dzn.XCSwiftr;
+				PRODUCT_NAME = XCSwiftr;
+				SWIFT_OBJC_BRIDGING_HEADER = "XCSwiftr/Vendor/XCSwiftr-Bridging-Header.h";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		F5BAF8421CB1B04F00FA49E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "PLUGIN=1";
+				INFOPLIST_FILE = XCSwiftrPlugin/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				LD_RUNPATH_SEARCH_PATHS = "$(DT_TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dzn.XCSwiftr;
+				PRODUCT_NAME = XCSwiftr;
+				SWIFT_OBJC_BRIDGING_HEADER = "XCSwiftr/Vendor/XCSwiftr-Bridging-Header.h";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F54006C31CB1B50000D00EBB /* Build configuration list for PBXNativeTarget "XCSwiftrApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F54006C41CB1B50000D00EBB /* Debug */,
+				F54006C51CB1B50000D00EBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5BAF82F1CB1B04F00FA49E2 /* Build configuration list for PBXProject "XCSwiftr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5BAF83E1CB1B04F00FA49E2 /* Debug */,
+				F5BAF83F1CB1B04F00FA49E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5BAF8401CB1B04F00FA49E2 /* Build configuration list for PBXNativeTarget "XCSwiftrPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5BAF8411CB1B04F00FA49E2 /* Debug */,
+				F5BAF8421CB1B04F00FA49E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5BAF82C1CB1B04F00FA49E2 /* Project object */;
+}
