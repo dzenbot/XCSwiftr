@@ -33,7 +33,7 @@
 		F54006E41CB1B94A00D00EBB /* XCSCommandController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCSCommandController.swift; sourceTree = "<group>"; };
 		F54006EE1CB2054800D00EBB /* XCSConverterWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCSConverterWindowController.xib; sourceTree = "<group>"; };
 		F54006F21CB2062500D00EBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		F54006F51CB20AE800D00EBB /* objc2swift-1.0.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = "objc2swift-1.0.jar"; sourceTree = "<group>"; };
+		F54006F51CB20AE800D00EBB /* objc2swift-1.0.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; name = "objc2swift-1.0.jar"; path = "product/objc2swift-1.0.jar"; sourceTree = "<group>"; };
 		F54006F91CB2674800D00EBB /* XCSSnippetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCSSnippetManager.swift; sourceTree = "<group>"; };
 		F5860F5F1CB3982300643FA9 /* XCSwiftr-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XCSwiftr-Bridging-Header.h"; sourceTree = "<group>"; };
 		F5860F821CB398F900643FA9 /* XCSwiftrPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCSwiftrPlugin.h; sourceTree = "<group>"; };
