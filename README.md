@@ -6,7 +6,7 @@
 Convert Objective-C code into Swift from within Xcode.
 This plugin uses the Java applet of `objc2swift` to do the conversion.
 
-Noticed that the translation is not always accurate? Does it fail at times? Please consider opening an issue in https://github.com/yahoojapan/objc2swift/issues/new instead of doing it here.
+Noticed that the translation is not always accurate? Does it fail at times? Please consider opening an issue in https://github.com/yahoojapan/objc2swift/issues/new.
 
 ## Features
 
@@ -29,7 +29,7 @@ Select any Objective-C snippet you would like to convert and right click on it.
 ![contextual menu](./Documentation/Screenshots/screenshot_contextual_menu.png)
 
 
-A modal window will be presented, with the left text view for Objective-C and the left one,
+A modal window will be presented, with the left pane for Objective-C and the left one, for Swift.
 
 ![main view](./Documentation/Screenshots/screenshot_main.png)
 
@@ -42,7 +42,7 @@ Alternatively, clone the project:
 
 1. Build the project to install the plugin. The plugin will be installed in `/Library/Application Support/Developer/Shared/Xcode/Plug-ins/XCSwiftr.xcplugin`.
 
-3. Restart Xcode so the plugin bundle is loaded.
+2. Restart Xcode so the plugin bundle is loaded.
 
 
 ## License
