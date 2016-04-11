@@ -72,22 +72,21 @@ static NSString * const kConvertToTitle =           @"Convert to Swift";
     NSString *className = [documentName stringByDeletingPathExtension];
 
     NSRange interfaceRange = [text rangeOfString:@"@interface"];
+    NSRange implementationRange = [text rangeOfString:@"@implementation"];
     
-    // Let's wrap the selected text into an obj-c interface so it plays nice
-    // with the requirements of the Objc2Swift script
-    if (interfaceRange.location == NSNotFound) {
-        [text insertString:[NSString stringWithFormat:@"\r@interface %@ : NSObject\r\r", className] atIndex:0];
+    // Wraps the selected text into an obj-c @implementation if needed
+    if (implementationRange.location == NSNotFound) {
+        
+        NSString *implementation = [NSString stringWithFormat:@"\r@implementation %@\r", className];
+        [text insertString:implementation atIndex:0];
         [text appendString:@"\r\r@end"];
     }
-    else {
-        NSString *classContent = [text substringFromIndex:interfaceRange.location+interfaceRange.length];
-        NSArray *components = [classContent componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    
+    // Wraps the selected text into an obj-c @interface if needed
+    if (interfaceRange.location == NSNotFound) {
         
-        if (components.count > 3 && ![[components firstObject] isEqualToString:@":"]) {
-            // If no explicit subclassing declared, let's wrap it up
-            // and make sure it plays nice with the Objc2Swift script
-            [text insertString:[NSString stringWithFormat:@"\r@interface %@ : NSObject\r@end\r\r", className] atIndex:0];
-        }
+        NSString *interface = [NSString stringWithFormat:@"\r@interface %@ : NSObject\r@end\r\r", className];
+        [text insertString:interface atIndex:0];
     }
     
     return text;
