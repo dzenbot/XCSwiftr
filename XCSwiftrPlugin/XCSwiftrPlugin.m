@@ -77,12 +77,12 @@ static NSString * const kConvertToTitle =           @"Convert to Swift";
     // Wraps the selected text into an obj-c @implementation if needed
     if (implementationRange.location == NSNotFound) {
         
-        NSString *implementation = [NSString stringWithFormat:@"\r@implementation %@\r", className];
+        NSString *implementation = [NSString stringWithFormat:@"\r@implementation %@\r\r", className];
         [text insertString:implementation atIndex:0];
         [text appendString:@"\r\r@end"];
     }
     
-    // Wraps the selected text into an obj-c @interface if needed
+    // Adds an empty obj-c @interface if needed
     if (interfaceRange.location == NSNotFound) {
         
         NSString *interface = [NSString stringWithFormat:@"\r@interface %@ : NSObject\r@end\r\r", className];
