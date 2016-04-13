@@ -40,7 +40,7 @@ Install through [Alcatraz](http://alcatraz.io/), the package manager for Xcode.
 
 Alternatively, clone the project:
 
-1. Build the project to install the plugin. The plugin will be installed in `/Library/Application Support/Developer/Shared/Xcode/Plug-ins/XCSwiftr.xcplugin`.
+1. Build the project to install the plugin. The plugin will be installed in `~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/XCSwiftr.xcplugin`.
 
 2. Restart Xcode so the plugin bundle is loaded.
 
