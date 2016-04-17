@@ -29,7 +29,7 @@ Select any Objective-C snippet you would like to convert and right click on it.
 ![contextual menu](./Documentation/Screenshots/screenshot_contextual_menu.png)
 
 
-A modal window will be presented, with the left pane for Objective-C and the left one, for Swift.
+Click on "Convert to Swift". A modal window will be presented, with the left pane for Objective-C and the left one, for Swift.
 
 ![main view](./Documentation/Screenshots/screenshot_main.png)
 
