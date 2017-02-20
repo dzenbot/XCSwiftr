@@ -20,7 +20,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         self.mainWindowController.window?.makeKeyAndOrderFront(self)
     }
 
-    func applicationShouldTerminateAfterLastWindowClosed(sender: NSApplication) -> Bool {
+    func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
         return true
     }
 }
